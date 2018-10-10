@@ -199,8 +199,18 @@ let mapleader = ','
 
 " Search files
 nmap <C-P> :GFiles<CR>
-nmap <Leader>t :Files<CR>
+nmap <C-T> :Files<CR>
 nmap ; :Buffers<CR>
+
+" Easier split navigations
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+nnoremap <silent> vv <C-w>v
+nnoremap <silent> vs <C-w>s
+nnoremap <silent> vo <C-w>o
 
 " Buffers
 nmap <silent> <C-x> :bd<CR>

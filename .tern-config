@@ -1,11 +1,9 @@
 {
-	{
-		"libs": [
-			"browser"
-		],
-		"plugins": {
-			"doc_comment": null,
-			"node": {}
-		}
+	"libs": [
+		"browser"
+	],
+	"plugins": {
+		"doc_comment": null,
+		"node": {}
 	}
 }
