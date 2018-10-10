@@ -1,0 +1,11 @@
+{
+	{
+		"libs": [
+			"browser"
+		],
+		"plugins": {
+			"doc_comment": null,
+			"node": {}
+		}
+	}
+}
