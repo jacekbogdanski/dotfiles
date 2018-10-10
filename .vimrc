@@ -199,6 +199,7 @@ let mapleader = ','
 
 " Search files
 nmap <C-P> :GFiles<CR>
+nmap <Leader>t :Files<CR>
 nmap ; :Buffers<CR>
 
 " Buffers
