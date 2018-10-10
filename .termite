@@ -1,3 +1,6 @@
+[options]
+font = Hack 10
+
 # one dark
 [colors]
 
