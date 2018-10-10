@@ -252,12 +252,9 @@ nmap <Leader>f :NERDTreeFind<CR>
 nmap <space>ga :Git add %<CR><CR>
 nmap <space>gs :Gstatus<CR>
 nmap <space>gc :Gcommit -v -q<CR>
-nmap <space>gt :Gcommit -v -q %<CR>
+nmap <space>gq :Gcommit -v -q %<CR>
 nmap <space>gd :Gdiff<CR>
 nmap <space>ge :Gedit<CR>
 nmap <space>gr :Gread<CR>
 nmap <space>gw :Gwrite<CR><CR>
-nmap <space>gl :Commits<CR>
 nmap <space>gm :Gmove<Space>
-nmap <space>gb :Git branch<Space>
-nmap <space>go :Git checkout<Space>
