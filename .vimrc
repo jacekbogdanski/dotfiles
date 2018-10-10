@@ -33,7 +33,7 @@ Plug 'jszakmeister/vim-togglecursor'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-vinegar'
 Plug 'scrooloose/nerdtree'
-Plug 'altercation/vim-colors-solarized'
+Plug 'joshdick/onedark.vim'
 
 call plug#end()
 
@@ -46,8 +46,11 @@ syntax enable
 
 set shell=/bin/zsh
 
-colorscheme solarized
-set background=dark
+set termguicolors
+
+let g:onedark_terminal_italics = '1'
+
+colorscheme onedark
 
 set swapfile " All swap files in tmp folder
 set dir=~/.vim/tmp
@@ -107,7 +110,7 @@ set diffopt+=vertical   " Diff vertical
 set autoread
 
 " Indent tab lines
-set list lcs=tab:\ \ 
+set list lcs=tab:\•\ 
 
 " ----------------------------------------------------------------------------------------
 "  PLUGINS CONFIGURATION
@@ -134,6 +137,7 @@ endif
 let g:javascript_plugin_jsdoc = 1
 
 " airline
+let g:airline_theme = 'onedark'
 let g:airline#extensions#tabline#enabled = 2
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#tabline#left_sep = ' '

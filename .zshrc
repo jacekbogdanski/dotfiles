@@ -76,7 +76,6 @@ PATH="$PATH:$(ruby -e 'print Gem.user_dir')/bin"
 
 alias vi="vim"
 alias yaourt="yaourt --noconfirm"
-alias tmux="TERM=xterm-256color tmux"
 
 # Disable ctrl + s lock
 stty -ixon
