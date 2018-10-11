@@ -32,8 +32,9 @@ Plug 'w0rp/ale'
 Plug 'jszakmeister/vim-togglecursor'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-vinegar'
-Plug 'scrooloose/nerdtree'
+Plug 'morhetz/gruvbox'
 Plug 'joshdick/onedark.vim'
+Plug 'christoomey/vim-tmux-navigator'
 
 call plug#end()
 
@@ -48,9 +49,10 @@ set shell=/bin/zsh
 
 set termguicolors
 
-let g:onedark_terminal_italics = '1'
+let g:gruvbox_italic = '1'
 
-colorscheme onedark
+colorscheme gruvbox
+set background=dark
 
 set swapfile " All swap files in tmp folder
 set dir=~/.vim/tmp
@@ -137,7 +139,7 @@ endif
 let g:javascript_plugin_jsdoc = 1
 
 " airline
-let g:airline_theme = 'onedark'
+let g:airline_theme = 'gruvbox'
 let g:airline#extensions#tabline#enabled = 2
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#tabline#left_sep = ' '
