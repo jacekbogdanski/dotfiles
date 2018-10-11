@@ -204,10 +204,13 @@ command! -bang -nargs=* Ag
 
 let mapleader = ','
 
+" Use ; for commands.
+nnoremap ; :
+
 " Search files
 nmap <C-P> :GFiles<CR>
-nmap <C-T> :Files<CR>
-nmap ; :Buffers<CR>
+nmap <Leader>t :GFiles<CR>
+nmap <Leader><Leader> :Buffers<CR>
 
 " Easier split navigations
 nnoremap <C-J> <C-W><C-J>
@@ -238,7 +241,7 @@ function! NumberToggle()
 endfunc
 
 " Toggle between normal and relative numbering.
-nmap <Leader>, :call NumberToggle()<cr>
+nmap <Leader>; :call NumberToggle()<cr>
 
 " Tern
 autocmd BufReadPost *.js nmap <buffer> K :TernDoc<CR>
