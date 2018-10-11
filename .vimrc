@@ -112,7 +112,7 @@ set diffopt+=vertical   " Diff vertical
 set autoread
 
 " Indent tab lines
-set list lcs=tab:\•\ 
+set list lcs=tab:\⋮\ 
 
 " ----------------------------------------------------------------------------------------
 "  PLUGINS CONFIGURATION
