@@ -35,6 +35,7 @@ Plug 'tpope/vim-vinegar'
 Plug 'morhetz/gruvbox'
 Plug 'joshdick/onedark.vim'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'scrooloose/nerdtree'
 
 call plug#end()
 
