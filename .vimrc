@@ -59,6 +59,8 @@ set background=dark
 set swapfile " All swap files in tmp folder
 set dir=~/.vim/tmp
 
+set backupdir=~/.vim/backup
+
 " set undo for persistent files
 set undofile
 set undodir=~/.vim/undodir
@@ -71,6 +73,7 @@ set complete-=1
 set smarttab
 
 set incsearch
+set nohlsearch
 
 set showcmd             " Show (partial) command in status line.
 set showmatch           " Show matching brackets.
