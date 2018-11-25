@@ -119,13 +119,15 @@ set autoread
 " Indent tab lines
 set list lcs=tab:\⋮\ 
 
+" ----------------------------------------------------------------------------------------
+"  PLUGINS CONFIGURATION
+" ----------------------------------------------------------------------------------------
+
 " netrw
 let g:netrw_liststyle = 3
 let g:netrw_winsize = 25
 
-" ----------------------------------------------------------------------------------------
-"  PLUGINS CONFIGURATION
-" ----------------------------------------------------------------------------------------
+autocmd FileType netrw setl bufhidden=delete
 
 " omnifuncs
 augroup omnifuncs
