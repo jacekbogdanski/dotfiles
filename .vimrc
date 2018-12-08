@@ -213,6 +213,12 @@ let mapleader = ','
 " Use ; for commands.
 nnoremap ; :
 
+" Clipboard
+noremap <Leader>y "+y
+noremap <Leader>p "+p
+noremap <Leader>Y "+Y
+noremap <Leader>P "+P
+
 " Search files
 nmap <C-P> :GFiles<CR>
 nmap <Leader>t :GFiles<CR>
