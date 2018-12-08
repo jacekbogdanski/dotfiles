@@ -221,7 +221,7 @@ noremap <Leader>P "+P
 
 " Search files
 nmap <C-P> :GFiles<CR>
-nmap <Leader>t :GFiles<CR>
+nmap <Leader>t :Files<CR>
 nmap <Leader><Leader> :Buffers<CR>
 
 " Easier split navigations
