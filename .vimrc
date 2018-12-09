@@ -94,10 +94,10 @@ set splitbelow          " Horizontal split below current.
 set splitright          " Vertical split to right of current.
 
 if !&scrolloff
-  set scrolloff=3       " Show next 3 lines while scrolling.
+	set scrolloff=3       " Show next 3 lines while scrolling.
 endif
 if !&sidescrolloff
-  set sidescrolloff=5   " Show next 5 columns while side-scrolling.
+	set sidescrolloff=5   " Show next 5 columns while side-scrolling.
 endif
 set nostartofline       " Do not jump to first character with page commands.
 
@@ -187,7 +187,7 @@ autocmd BufWinLeave * GitGutterAll
 " Override Colors command. You can safely do this in your .vimrc as fzf.vim
 " will not override existing commands.
 command! -bang Colors
-  \ call fzf#vim#colors({'left': '15%', 'options': '--reverse --margin 30%,0'}, <bang>0)
+			\ call fzf#vim#colors({'left': '15%', 'options': '--reverse --margin 30%,0'}, <bang>0)
 
 " Augmenting Ag command using fzf#vim#with_preview function
 "   * fzf#vim#with_preview([[options], preview window, [toggle keys...]])
@@ -199,10 +199,10 @@ command! -bang Colors
 "   :Ag  - Start fzf with hidden preview window that can be enabled with "?" key
 "   :Ag! - Start fzf in fullscreen and display the preview window above
 command! -bang -nargs=* Ag
-  \ call fzf#vim#ag(<q-args>,
-  \                 <bang>0 ? fzf#vim#with_preview('up:60%')
-  \                         : fzf#vim#with_preview('right:50%:hidden', '?'),
-  \                 <bang>0)
+			\ call fzf#vim#ag(<q-args>,
+			\                 <bang>0 ? fzf#vim#with_preview('up:60%')
+			\                         : fzf#vim#with_preview('right:50%:hidden', '?'),
+			\                 <bang>0)
 
 " ----------------------------------------------------------------------------------------
 "  KEY BINDINGS
@@ -244,12 +244,12 @@ nmap <Leader>S :%S//g<Left><Left>
 
 " Relative numbering
 function! NumberToggle()
-  if(&relativenumber == 1)
-    set nornu
-    set number
-  else
-    set rnu
-  endif
+	if(&relativenumber == 1)
+		set nornu
+		set number
+	else
+		set rnu
+	endif
 endfunc
 
 " Toggle between normal and relative numbering.
