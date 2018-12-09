@@ -7,7 +7,7 @@ export ZSH=/home/jacek/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -36,7 +36,7 @@ ZSH_THEME="robbyrussell"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -65,14 +65,16 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
+## User configuration
 
-source $HOME/.extras
+DEFAULT_USER=`whoami`
 
 export EDITOR="vim"
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 PATH="$PATH:$(ruby -e 'print Gem.user_dir')/bin"
+
+# Aliases
 
 alias vi="vim"
 alias yaourt="yaourt --noconfirm"
@@ -82,3 +84,5 @@ alias tmux="TERM=xterm-256color tmux"
 stty -ixon
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+source $HOME/.extras
