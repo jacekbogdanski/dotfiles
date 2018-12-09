@@ -78,7 +78,7 @@ TERM="xterm-256color"
 # Aliases
 
 alias vi="vim"
-alias yaourt="yaourt --noconfirm"
+alias open="xdg-open"
 
 # Disable ctrl + s lock
 stty -ixon
