@@ -73,12 +73,12 @@ export EDITOR="vim"
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 PATH="$PATH:$(ruby -e 'print Gem.user_dir')/bin"
+TERM="xterm-256color"
 
 # Aliases
 
 alias vi="vim"
 alias yaourt="yaourt --noconfirm"
-alias tmux="TERM=xterm-256color tmux"
 
 # Disable ctrl + s lock
 stty -ixon
