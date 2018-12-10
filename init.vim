@@ -4,7 +4,6 @@
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'SirVer/ultisnips'
 Plug 'Yggdroot/indentLine'
 Plug 'airblade/vim-gitgutter'
 Plug 'alvan/vim-closetag'
@@ -262,11 +261,6 @@ autocmd BufReadPost *.js nmap <buffer> K :TernDoc<CR>
 autocmd Filetype javascript nmap <C-T> :TernRefs<CR>
 autocmd Filetype javascript nmap <C-]> :TernDef<CR>
 autocmd Filetype javascript nmap <Leader>r :TernRename<CR>
-
-" ultisnips
-let g:UltiSnipsExpandTrigger="<CR>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 " nerdtree
 nmap <Leader>b :NERDTreeToggle<CR>
