@@ -147,6 +147,10 @@ augroup end
 autocmd BufEnter * call ncm2#enable_for_buffer()
 set completeopt=noinsert,menuone,noselect
 
+" suppress the annoying 'match x of y', 'The only match' and 'Pattern not
+" found' messages
+set shortmess+=c
+
 " vim-javascript
 let g:javascript_plugin_jsdoc = 1
 
