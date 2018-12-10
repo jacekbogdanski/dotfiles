@@ -17,7 +17,6 @@ Plug 'junegunn/fzf.vim'
 Plug 'mattn/emmet-vim'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'pangloss/vim-javascript'
-Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-eunuch'
@@ -36,6 +35,13 @@ Plug 'joshdick/onedark.vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'scrooloose/nerdtree'
 Plug 'leafgarland/typescript-vim'
+" Autocomplete
+Plug 'ncm2/ncm2'
+Plug 'ncm2/ncm2-bufword'
+Plug 'ncm2/ncm2-tmux'
+Plug 'ncm2/ncm2-path'
+Plug 'ncm2/ncm2-tern'
+Plug 'roxma/nvim-yarp'
 
 call plug#end()
 
@@ -137,13 +143,9 @@ augroup omnifuncs
 	autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 augroup end
 
-" ternjs
-if exists('g:plugs["tern_for_vim"]')
-	let g:tern_show_argument_hints = 'on_hold'
-	let g:tern_show_signature_in_pum = 1
-	autocmd FileType javascript setlocal omnifunc=tern#Complete
-	autocmd CompleteDone * pclose
-endif
+" ncm2
+autocmd BufEnter * call ncm2#enable_for_buffer()
+set completeopt=noinsert,menuone,noselect
 
 " vim-javascript
 let g:javascript_plugin_jsdoc = 1
@@ -214,11 +216,11 @@ nmap <C-P> :GFiles<CR>
 nmap <Leader>t :Files<CR>
 nmap <Leader><Leader> :Buffers<CR>
 
-" Easier split navigations
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
+let g:tmux_navigator_no_mappings = 1
+nnoremap <silent> <C-H> :TmuxNavigateLeft<cr>
+nnoremap <silent> <C-J> :TmuxNavigateDown<cr>
+nnoremap <silent> <C-K> :TmuxNavigateUp<cr>
+nnoremap <silent> <C-L> :TmuxNavigateRight<cr>
 
 nnoremap <silent> vv <C-w>v
 nnoremap <silent> vs <C-w>s

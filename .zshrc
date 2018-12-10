@@ -69,7 +69,7 @@ source $ZSH/oh-my-zsh.sh
 
 DEFAULT_USER=`whoami`
 
-export EDITOR="vim"
+export EDITOR="nvim"
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 PATH="$PATH:$(ruby -e 'print Gem.user_dir')/bin"
@@ -77,7 +77,7 @@ TERM="xterm-256color"
 
 # Aliases
 
-alias vi="vim"
+alias vi="nvim"
 alias open='xdg-open &>/dev/null'
 
 # Disable ctrl + s lock
