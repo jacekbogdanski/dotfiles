@@ -38,9 +38,9 @@ Plug 'leafgarland/typescript-vim'
 " Autocomplete
 Plug 'ncm2/ncm2'
 Plug 'ncm2/ncm2-bufword'
-Plug 'ncm2/ncm2-tmux', { 'do': 'npm i' }
+Plug 'ncm2/ncm2-tern', { 'do': 'npm i' }
 Plug 'ncm2/ncm2-path'
-Plug 'ncm2/ncm2-tern'
+Plug 'ncm2/ncm2-tmux'
 Plug 'ncm2/ncm2-cssomni'
 Plug 'ncm2/ncm2-html-subscope'
 Plug 'roxma/nvim-yarp'
