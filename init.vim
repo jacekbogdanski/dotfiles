@@ -123,6 +123,8 @@ set diffopt+=vertical   " Diff vertical
 
 set autoread
 
+set clipboard+=unnamedplus
+
 " Indent tab lines
 set list lcs=tab:\⋮\ 
 
