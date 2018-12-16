@@ -34,6 +34,7 @@ Plug 'joshdick/onedark.vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'scrooloose/nerdtree'
 Plug 'leafgarland/typescript-vim'
+Plug 'SirVer/ultisnips'
 " Autocomplete
 Plug 'ncm2/ncm2'
 Plug 'ncm2/ncm2-bufword'
@@ -43,6 +44,7 @@ Plug 'ncm2/ncm2-tern', { 'do': 'npm i' }
 Plug 'ncm2/ncm2-cssomni'
 Plug 'ncm2/ncm2-html-subscope'
 Plug 'ncm2/ncm2-jedi'
+Plug 'ncm2/ncm2-ultisnips'
 Plug 'fgrsnau/ncm2-otherbuf', { 'branch': 'ncm2' }
 Plug 'roxma/nvim-yarp'
 
@@ -156,7 +158,7 @@ augroup end
 
 " ncm2
 autocmd BufEnter * call ncm2#enable_for_buffer()
-set completeopt=noinsert,menuone,noselect
+set completeopt=noinsert,menuone,noselect,preview
 
 " Use <TAB> to select the popup menu:
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
@@ -165,6 +167,9 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 " suppress the annoying 'match x of y', 'The only match' and 'Pattern not
 " found' messages
 set shortmess+=c
+let ncm2#popup_delay = 5
+" let ncm2#complete_length = [[1, 1]]
+" let ncm2#popup_limit = 30
 
 " vim-javascript
 let g:javascript_plugin_jsdoc = 1
@@ -175,8 +180,8 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#ale#enabled = 1
 
 " ale
-let g:ale_fix_on_save = 1
-let g:ale_lint_on_text_changed = 1
+let g:ale_lint_on_text_changed = 'normal'
+let g:ale_lint_on_insert_leave = 1
 let g:ale_lint_on_enter = 1
 let g:ale_lint_on_save = 1
 let g:ale_sign_column_always = 1
@@ -280,3 +285,14 @@ nmap <Leader>ge :Gedit<CR>
 nmap <Leader>gr :Gread<CR>
 nmap <Leader>gw :Gwrite<CR><CR>
 nmap <Leader>gm :Gmove<Space>
+
+" ultisnips
+" Press enter key to trigger snippet expansion
+" The parameters are the same as `:help feedkeys()`
+inoremap <silent> <expr> <CR> ncm2_ultisnips#expand_or("\<CR>", 'n')
+
+" c-j c-k for moving in snippet
+let g:UltiSnipsExpandTrigger		= "<Plug>(ultisnips_expand)"
+let g:UltiSnipsJumpForwardTrigger	= "<c-j>"
+let g:UltiSnipsJumpBackwardTrigger	= "<c-k>"
+let g:UltiSnipsRemoveSelectModeMappings = 0
