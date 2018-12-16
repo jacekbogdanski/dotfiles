@@ -73,6 +73,8 @@ export EDITOR="nvim"
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 PATH="$PATH:$(ruby -e 'print Gem.user_dir')/bin"
+PATH="$PATH:$HOME/.local/bin"
+
 TERM="xterm-256color"
 
 # Aliases
