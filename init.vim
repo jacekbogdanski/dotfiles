@@ -158,18 +158,16 @@ augroup end
 
 " ncm2
 autocmd BufEnter * call ncm2#enable_for_buffer()
+autocmd User Ncm2PopupClose :pclose
+
 set completeopt=noinsert,menuone,noselect,preview
 
 " Use <TAB> to select the popup menu:
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
-" suppress the annoying 'match x of y', 'The only match' and 'Pattern not
-" found' messages
 set shortmess+=c
 let ncm2#popup_delay = 5
-" let ncm2#complete_length = [[1, 1]]
-" let ncm2#popup_limit = 30
 
 " vim-javascript
 let g:javascript_plugin_jsdoc = 1
