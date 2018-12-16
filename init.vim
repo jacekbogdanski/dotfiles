@@ -35,6 +35,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'scrooloose/nerdtree'
 Plug 'leafgarland/typescript-vim'
 Plug 'SirVer/ultisnips'
+Plug 'mbbill/undotree'
 " Autocomplete
 Plug 'ncm2/ncm2'
 Plug 'ncm2/ncm2-bufword'
@@ -267,6 +268,9 @@ nmap <Leader>; :call NumberToggle()<cr>
 " nerdtree
 nmap <Leader>b :NERDTreeToggle<CR>
 nmap <Leader>f :NERDTreeFind<CR>
+
+" undotree
+nmap <Leader>u :UndotreeToggle<CR>
 
 " fugitive
 nmap <Leader>ga :Git add %<CR><CR>
