@@ -158,9 +158,10 @@ augroup end
 
 " ncm2
 autocmd BufEnter * call ncm2#enable_for_buffer()
-autocmd User Ncm2PopupClose :pclose
+" autocmd User Ncm2PopupClose :pclose
 
-set completeopt=noinsert,menuone,noselect,preview
+set completeopt=noinsert,menuone,noselect
+" set completeopt+=preview
 
 " Use <TAB> to select the popup menu:
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
