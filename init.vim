@@ -265,12 +265,6 @@ endfunc
 " Toggle between normal and relative numbering.
 nmap <Leader>; :call NumberToggle()<cr>
 
-" Tern
-autocmd BufReadPost *.js nmap <buffer> K :TernDoc<CR>
-autocmd Filetype javascript nmap <C-T> :TernRefs<CR>
-autocmd Filetype javascript nmap <C-]> :TernDef<CR>
-autocmd Filetype javascript nmap <Leader>r :TernRename<CR>
-
 " nerdtree
 nmap <Leader>b :NERDTreeToggle<CR>
 nmap <Leader>f :NERDTreeFind<CR>
