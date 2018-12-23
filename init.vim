@@ -9,7 +9,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'alvan/vim-closetag'
 Plug 'ap/vim-css-color'
 Plug 'elzr/vim-json'
-Plug 'honza/vim-snippets'
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -34,7 +33,6 @@ Plug 'joshdick/onedark.vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'scrooloose/nerdtree'
 Plug 'leafgarland/typescript-vim'
-Plug 'SirVer/ultisnips'
 Plug 'mbbill/undotree'
 " Autocomplete
 Plug 'ncm2/ncm2'
@@ -45,7 +43,6 @@ Plug 'ncm2/ncm2-tern', { 'do': 'npm i' }
 Plug 'ncm2/ncm2-cssomni'
 Plug 'ncm2/ncm2-html-subscope'
 Plug 'ncm2/ncm2-jedi'
-Plug 'ncm2/ncm2-ultisnips'
 Plug 'fgrsnau/ncm2-otherbuf', { 'branch': 'ncm2' }
 Plug 'roxma/nvim-yarp'
 
@@ -168,6 +165,9 @@ set completeopt=noinsert,menuone,noselect
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
+" Don't prevent enter key.
+inoremap <expr> <CR> (pumvisible() ? "\<c-y>\<cr>" : "\<CR>")
+
 set shortmess+=c
 let ncm2#popup_delay = 5
 
@@ -282,14 +282,3 @@ nmap <Leader>ge :Gedit<CR>
 nmap <Leader>gr :Gread<CR>
 nmap <Leader>gw :Gwrite<CR><CR>
 nmap <Leader>gm :Gmove<Space>
-
-" ultisnips
-" Press enter key to trigger snippet expansion
-" The parameters are the same as `:help feedkeys()`
-inoremap <silent> <expr> <CR> ncm2_ultisnips#expand_or("\<CR>", 'n')
-
-" c-j c-k for moving in snippet
-let g:UltiSnipsExpandTrigger		= "<Plug>(ultisnips_expand)"
-let g:UltiSnipsJumpForwardTrigger	= "<c-j>"
-let g:UltiSnipsJumpBackwardTrigger	= "<c-k>"
-let g:UltiSnipsRemoveSelectModeMappings = 0
