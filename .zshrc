@@ -67,6 +67,11 @@ source $ZSH/oh-my-zsh.sh
 
 ## User configuration
 
+# UI
+
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir virtualenv vcs)
+POWERLEVEL9K_VIRTUALENV_BACKGROUND="pink3"
+
 DEFAULT_USER=`whoami`
 
 export EDITOR="nvim"
