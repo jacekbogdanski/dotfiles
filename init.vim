@@ -60,9 +60,11 @@ set shell=/bin/zsh
 set termguicolors
 
 let g:gruvbox_italic = '1'
-
 colorscheme gruvbox
-set background=dark
+set background=light
+
+" colorscheme PaperColor
+" set background=light
 
 set swapfile " All swap files in tmp folder
 set dir=~/.vim/tmp
