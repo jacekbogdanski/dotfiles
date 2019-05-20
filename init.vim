@@ -120,8 +120,6 @@ set smartcase           " ... unless the query has capital letters.
 
 set hidden              " Hide current buffer when switching between buffers
 
-set diffopt+=vertical   " Diff vertical
-
 set autoread
 
 set clipboard+=unnamedplus
