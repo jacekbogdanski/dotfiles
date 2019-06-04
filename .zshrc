@@ -93,3 +93,5 @@ stty -ixon
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 source $HOME/.extras
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
