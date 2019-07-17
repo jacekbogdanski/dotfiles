@@ -70,7 +70,6 @@ set complete-=1
 set smarttab
 
 set incsearch
-set nohlsearch
 
 set showcmd             " Show (partial) command in status line.
 set showmatch           " Show matching brackets.
@@ -245,6 +244,9 @@ let mapleader = ','
 " Use ; for commands.
 nnoremap ; :
 
+" Clean hlsearch
+nnoremap <silent> <esc> :nohls<cr>
+
 " Search files
 nmap <C-P> :GFiles<CR>
 nmap <Leader>t :Files<CR>
@@ -327,17 +329,17 @@ function! s:show_documentation()
   endif
 endfunction
 
-" " Remap for rename current word
+" Remap for rename current word
 nmap <leader>rn <Plug>(coc-rename)
 
-" " Remap for format selected region
+" Remap for format selected region
 nmap <leader>f <Plug>(coc-format-selected)
-" " Remap for do codeAction of selected region, ex: `<leader>aap` for current paragraph
+" Remap for do codeAction of selected region, ex: `<leader>aap` for current paragraph
 nmap <leader>a <Plug>(coc-codeaction-selected)
 
-" " Remap for do codeAction of current line
+" Remap for do codeAction of current line
 nmap <leader>ac <Plug>(coc-codeaction)
-" " Fix autofix problem of current line
+" Fix autofix problem of current line
 nmap <leader>qf <Plug>(coc-fix-current)
 
 " Using CocList
