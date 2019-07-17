@@ -194,6 +194,9 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#ale#enabled = 1
 
+call airline#parts#define_function('coc_status', 'coc#status')
+let g:airline_section_y = airline#section#create_right(['coc_status','ffenc'])
+
 " ale
 let g:ale_lint_on_text_changed = 'normal'
 let g:ale_lint_on_insert_leave = 1
@@ -304,7 +307,7 @@ function! s:check_back_space() abort
 endfunction
 
 " Use <c-space> to trigger completion.
-inoremap <silent><expr> <leader><space> coc#refresh()
+inoremap <silent><expr> <c-space> coc#refresh()
 
 " Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position.
 " Coc only does snippet and additional edit on confirm.
@@ -331,19 +334,17 @@ function! s:show_documentation()
   endif
 endfunction
 
-" Remap for rename current word
+" " Remap for rename current word
 nmap <leader>rn <Plug>(coc-rename)
 
-" Remap for format selected region
-xmap <leader>f <Plug>(coc-format-selected)
+" " Remap for format selected region
 nmap <leader>f <Plug>(coc-format-selected)
-" Remap for do codeAction of selected region, ex: `<leader>aap` for current paragraph
-xmap <leader>a <Plug>(coc-codeaction-selected)
+" " Remap for do codeAction of selected region, ex: `<leader>aap` for current paragraph
 nmap <leader>a <Plug>(coc-codeaction-selected)
 
-" Remap for do codeAction of current line
+" " Remap for do codeAction of current line
 nmap <leader>ac <Plug>(coc-codeaction)
-" Fix autofix problem of current line
+" " Fix autofix problem of current line
 nmap <leader>qf <Plug>(coc-fix-current)
 
 " Using CocList
