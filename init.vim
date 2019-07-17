@@ -300,10 +300,17 @@ nmap <Leader>gm :Gmove<Space>
 inoremap <expr> <C-j> pumvisible() ? "\<C-N>" : "\<C-j>"
 inoremap <expr> <C-k> pumvisible() ? "\<C-P>" : "\<C-k>"
 
-" Use <TAB> to confirm completion. When nothing selected, first item will be added on tab.
-" `<C-g>u` means break undo chain at current position.
-inoremap <expr> <TAB> !pumvisible() ? "\<C-g>u\<TAB>" :
-			\ !empty(v:completed_item) ? "\<C-y>\<C-g>u" : "\<C-N>"
+" Use tab for trigger completion with characters ahead and navigate.
+" Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+" Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position.
+" Coc only does snippet and additional edit on confirm.
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 " Use <c-space> to trigger completion.
 inoremap <silent><expr> <c-space> coc#refresh()
