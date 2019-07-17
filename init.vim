@@ -298,9 +298,10 @@ nmap <Leader>gm :Gmove<Space>
 inoremap <expr> <C-j> pumvisible() ? "\<C-N>" : "\<C-j>"
 inoremap <expr> <C-k> pumvisible() ? "\<C-P>" : "\<C-k>"
 
-" Use <TAB> to confirm completion, `<C-g>u` means break undo chain at current position.
-" Coc only does snippet and additional edit on confirm.
-inoremap <expr> <TAB> pumvisible() ? "\<C-y>" : "\<C-g>u\<TAB>"
+" Use <TAB> to confirm completion. When nothing selected, first item will be added on tab.
+" `<C-g>u` means break undo chain at current position.
+inoremap <expr> <TAB> !pumvisible() ? "\<C-g>u\<TAB>" :
+			\ !empty(v:completed_item) ? "\<C-y>\<C-g>u" : "\<C-N>"
 
 " Use <c-space> to trigger completion.
 inoremap <silent><expr> <c-space> coc#refresh()
