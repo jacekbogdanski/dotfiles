@@ -70,6 +70,7 @@ set complete-=1
 set smarttab
 
 set incsearch
+set nohls
 
 set showcmd             " Show (partial) command in status line.
 set showmatch           " Show matching brackets.
@@ -243,9 +244,6 @@ let mapleader = ','
 
 " Use ; for commands.
 nnoremap ; :
-
-" Clean hlsearch
-nnoremap <silent> <esc> :nohls<cr>
 
 " Search files
 nmap <C-P> :GFiles<CR>
