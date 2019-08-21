@@ -366,3 +366,12 @@ nnoremap <silent> <space>j :<C-u>CocNext<CR>
 nnoremap <silent> <space>k :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>p :<C-u>CocListResume<CR>
+
+" Python
+vmap <F5> :call PyRun()<CR>
+nmap <F5> :!python3 %<CR>
+
+fu PyRun() range
+	echo system('python3 -c ' . shellescape(join(getline(a:firstline, a:lastline), "\n")))
+endf
+
