@@ -246,7 +246,7 @@ let mapleader = ','
 nnoremap ; :
 
 " Search files
-nmap <C-P> :GFiles<CR>
+nmap <C-P> :GFiles --exclude-standard --others --cached<CR>
 nmap <Leader>t :Files<CR>
 nmap <Leader><Leader> :Buffers<CR>
 
