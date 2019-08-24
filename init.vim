@@ -34,6 +34,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'leafgarland/typescript-vim'
 Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
 Plug 'honza/vim-snippets'
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 
 call plug#end()
 
@@ -52,6 +53,8 @@ let g:gruvbox_italic = '1'
 
 colorscheme gruvbox
 set background=dark
+
+set autowrite
 
 set swapfile " All swap files in tmp folder
 set dir=~/.vim/tmp
