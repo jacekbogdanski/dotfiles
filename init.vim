@@ -28,7 +28,6 @@ Plug 'w0rp/ale'
 Plug 'jszakmeister/vim-togglecursor'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-vinegar'
-Plug 'morhetz/gruvbox'
 Plug 'joshdick/onedark.vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'leafgarland/typescript-vim'
@@ -49,10 +48,7 @@ set shell=/bin/zsh
 
 set termguicolors
 
-let g:gruvbox_italic = '1'
-
-colorscheme gruvbox
-set background=dark
+colorscheme onedark
 
 set autowrite
 
