@@ -74,7 +74,7 @@ POWERLEVEL9K_VIRTUALENV_BACKGROUND="pink3"
 
 DEFAULT_USER=`whoami`
 
-export EDITOR="nvim"
+export EDITOR="vim"
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 PATH="$PATH:$(ruby -e 'print Gem.user_dir')/bin"
@@ -96,8 +96,9 @@ source $HOME/.extras
 
 export GOPATH="$HOME/go"
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.cargo/bin:$PATH"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
