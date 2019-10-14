@@ -34,6 +34,7 @@ Plug 'leafgarland/typescript-vim'
 Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
 Plug 'honza/vim-snippets'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+Plug 'cespare/vim-toml'
 
 call plug#end()
 
@@ -114,6 +115,8 @@ set hidden              " Hide current buffer when switching between buffers
 set autoread
 
 set clipboard+=unnamedplus
+
+set diffopt+=vertical
 
 " Indent tab lines
 set list lcs=tab:\⋮\ 
