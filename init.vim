@@ -114,7 +114,7 @@ set hidden              " Hide current buffer when switching between buffers
 
 set autoread
 
-set clipboard+=unnamedplus
+set clipboard=unnamedplus
 
 set diffopt+=vertical
 
