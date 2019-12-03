@@ -146,6 +146,9 @@ augroup omnifuncs
 	autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 augroup end
 
+" Indent line
+let g:indentLine_setConceal = 0
+
 " COC
 " Some servers have issues with backup files, see #649
 set nobackup
