@@ -120,8 +120,6 @@ let mapleader = ','
 
 nnoremap ; :
 
-nnoremap <space> za
-
 nmap <silent> <C-x> :bd<CR>
 nmap <silent> <C-s> :w<CR>
 
