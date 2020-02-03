@@ -7,7 +7,7 @@ font:
 
   offset:
     x: 0
-    y: 4
+    y: 1
 
 # Colors (Base16 Default Dark)
 colors:
