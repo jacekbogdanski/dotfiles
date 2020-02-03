@@ -113,7 +113,7 @@ set clipboard=unnamedplus
 
 set diffopt+=vertical
 
-set list lcs=tab:\⋮\ 
+set list lcs=tab:\¦\ 
 
 let mapleader = ','
 
