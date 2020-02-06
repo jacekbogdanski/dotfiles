@@ -26,7 +26,7 @@ Plug 'w0rp/ale'
 Plug 'jszakmeister/vim-togglecursor'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-vinegar'
-Plug 'chriskempson/base16-vim'
+Plug 'joshdick/onedark.vim/gruvbox'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'leafgarland/typescript-vim'
 Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
@@ -45,7 +45,8 @@ set shell=/bin/zsh
 
 set termguicolors
 
-colorscheme base16-default-dark
+colorscheme gruvbox
+set background=dark
 
 let &t_SI = "\<esc>[5 q" " I beam cursor for insert mode
 let &t_EI = "\<esc>[2 q" " block cursor for normal mode
@@ -78,7 +79,6 @@ set showmode            " Show current mode.
 set ruler               " Show the line and column numbers of the cursor.
 set number              " Show the line numbers on the left side.
 set numberwidth=5
-set signcolumn=number
 set formatoptions-=o    " Continue comment marker in new lines.
 set tabstop=4           " Render TABs using this many spaces.
 set shiftwidth=4        " Indentation amount for < and > commands.
@@ -115,8 +115,6 @@ set clipboard=unnamedplus
 set diffopt+=vertical
 
 set cursorline
-highlight LineNr guibg=NONE
-highlight CursorLineNr cterm=bold term=bold
 
 set list lcs=tab:\¦\ 
 
