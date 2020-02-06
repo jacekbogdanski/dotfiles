@@ -26,7 +26,7 @@ Plug 'w0rp/ale'
 Plug 'jszakmeister/vim-togglecursor'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-vinegar'
-Plug 'joshdick/onedark.vim/gruvbox'
+Plug 'morhetz/gruvbox'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'leafgarland/typescript-vim'
 Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
