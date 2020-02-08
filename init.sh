@@ -3,6 +3,7 @@
 ln -sfn $HOME/dotfiles/.zshrc $HOME/.zshrc
 ln -sfn $HOME/dotfiles/.vimrc $HOME/.vimrc
 ln -sfn $HOME/dotfiles/.vim/ftplugin $HOME/.vim/ftplugin
+ln -sfn $HOME/dotfiles/.vim/after $HOME/.vim/after
 ln -sfn $HOME/dotfiles/.vim/plugin $HOME/.vim/plugin
 ln -sfn $HOME/dotfiles/kitty.conf $HOME/.config/kitty/kitty.conf
 ln -sfn $HOME/dotfiles/.alacritty.yml $HOME/.alacritty.yml

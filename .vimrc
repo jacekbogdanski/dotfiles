@@ -26,7 +26,7 @@ Plug 'w0rp/ale'
 Plug 'jszakmeister/vim-togglecursor'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-vinegar'
-Plug 'morhetz/gruvbox'
+Plug 'joshdick/onedark.vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'leafgarland/typescript-vim'
 Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
@@ -35,6 +35,7 @@ Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'cespare/vim-toml'
 Plug 'AndrewRadev/linediff.vim'
 Plug 'tmhedberg/SimpylFold'
+Plug 'takac/vim-hardtime'
 
 call plug#end()
 
@@ -45,8 +46,7 @@ set shell=/bin/zsh
 
 set termguicolors
 
-colorscheme gruvbox
-set background=dark
+colorscheme onedark
 
 let &t_SI = "\<esc>[5 q" " I beam cursor for insert mode
 let &t_EI = "\<esc>[2 q" " block cursor for normal mode
@@ -87,6 +87,8 @@ set noerrorbells        " No beeps.
 set modeline            " Enable modeline.
 set linespace=0         " Set line-spacing to minimum.
 set nojoinspaces        " Prevents inserting two spaces after punctuation on a join (J)
+
+set conceallevel=2
 
 " More natural splits
 set splitbelow          " Horizontal split below current.
