@@ -84,7 +84,7 @@ TERM="xterm-256color"
 
 # Aliases
 
-alias vi="gvim -v"
+alias vi="nvim"
 alias open='xdg-open &>/dev/null'
 
 # Disable ctrl + s lock
