@@ -38,6 +38,7 @@ Plug 'AndrewRadev/linediff.vim'
 Plug 'tmhedberg/SimpylFold'
 Plug 'majutsushi/tagbar'
 Plug 'francoiscabrol/ranger.vim'
+Plug 'editorconfig/editorconfig-vim'
 
 call plug#end()
 
