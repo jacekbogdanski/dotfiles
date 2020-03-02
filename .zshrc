@@ -74,7 +74,7 @@ POWERLEVEL9K_VIRTUALENV_BACKGROUND="pink3"
 
 DEFAULT_USER=`whoami`
 
-export EDITOR="vim"
+export EDITOR="nvim"
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 PATH="$PATH:$(ruby -e 'print Gem.user_dir')/bin"
