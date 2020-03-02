@@ -36,7 +36,8 @@ Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'cespare/vim-toml'
 Plug 'AndrewRadev/linediff.vim'
 Plug 'tmhedberg/SimpylFold'
-Plug 'majtsushi/tagbar'
+Plug 'majutsushi/tagbar'
+Plug 'francoiscabrol/ranger.vim'
 
 call plug#end()
 
