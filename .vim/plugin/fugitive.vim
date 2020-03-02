@@ -1,5 +1,5 @@
 nmap <Leader>ga :Git add %<CR><CR>
-nmap <Leader>gs :Gstatus<CR>
+nmap <Leader>gg :Gstatus<CR>
 nmap <Leader>gc :Gcommit -v -q<CR>
 nmap <Leader>gq :Gcommit -v -q %<CR>
 nmap <Leader>gd :Gdiff<CR>
