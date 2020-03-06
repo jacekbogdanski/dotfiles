@@ -39,6 +39,8 @@ Plug 'tmhedberg/SimpylFold'
 Plug 'majutsushi/tagbar'
 Plug 'francoiscabrol/ranger.vim'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'matze/vim-move'
 
 call plug#end()
 
