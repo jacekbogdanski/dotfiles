@@ -17,33 +17,29 @@ font:
     x: 0
     y: 1
 
-# Colors (One Dark)
+# Colors (Pencil Light)
 colors:
-  # Default colors
-  primary:
-    background: '0x282c34'
-    foreground: '0xabb2bf'
-
-  # Normal colors
-  normal:
-    # NOTE: Use '0x131613' for the `black` color if you'd like to see
-    # black text on the background.
-    black:   '0x282c34'
-    red:     '0xe06c75'
-    green:   '0x98c379'
-    yellow:  '0xd19a66'
-    blue:    '0x61afef'
-    magenta: '0xc678dd'
-    cyan:    '0x56b6c2'
-    white:   '0xabb2bf'
-
-  # Bright colors
-  bright:
-    black:   '0x5c6370'
-    red:     '0xe06c75'
-    green:   '0x98c379'
-    yellow:  '0xd19a66'
-    blue:    '0x61afef'
-    magenta: '0xc678dd'
-    cyan:    '0x56b6c2'
-    white:   '0xffffff'
+ # Default Colors
+ primary:
+   background: '#f1f1f1'
+   foreground: '#424242'
+ # Normal colors
+ normal:
+   black:   '#212121'
+   red:     '#c30771'
+   green:   '#10a778'
+   yellow:  '#a89c14'
+   blue:    '#008ec4'
+   magenta: '#523c79'
+   cyan:    '#20a5ba'
+   white:   '#e0e0e0'
+ # Bright colors
+ bright:
+   black:   '#212121'
+   red:     '#fb007a'
+   green:   '#5fd7af'
+   yellow:  '#f3e430'
+   blue:    '#20bbfc'
+   magenta: '#6855de'
+   cyan:    '#4fb8cc'
+   white:   '#f1f1f1'

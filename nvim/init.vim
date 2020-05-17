@@ -27,7 +27,7 @@ Plug 'w0rp/ale'
 Plug 'jszakmeister/vim-togglecursor'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-vinegar'
-Plug 'joshdick/onedark.vim'
+Plug 'NLKNguyen/papercolor-theme'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'leafgarland/typescript-vim'
 Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
@@ -51,7 +51,8 @@ set shell=/bin/zsh
 
 set termguicolors
 
-colorscheme onedark
+set background=light
+colorscheme PaperColor
 
 let &t_SI = "\<esc>[5 q" " I beam cursor for insert mode
 let &t_EI = "\<esc>[2 q" " block cursor for normal mode
