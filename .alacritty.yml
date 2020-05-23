@@ -1,14 +1,14 @@
 font:
   normal:
-    family: Fira Code
+    family: InputMono
     style: Regular
 
   bold:
-    family: Fira Code
+    family: InputMono
     style: Bold
 
   italic:
-    family: Fira Code
+    family: InputMono
     style: Italic
 
   size: 11

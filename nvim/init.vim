@@ -51,6 +51,7 @@ set shell=/bin/zsh
 
 set termguicolors
 
+let g:onedark_terminal_italics = 1
 colorscheme onedark
 
 let &t_SI = "\<esc>[5 q" " I beam cursor for insert mode
