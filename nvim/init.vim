@@ -132,6 +132,7 @@ let mapleader = ','
 nnoremap ; :
 
 nmap <silent> <C-x> :bd<CR>
+nmap <silent> <C-S-x> :bd!<CR>
 nmap <silent> <C-s> :w<CR>
 
 nmap <Leader>s :%s//g<Left><Left>
