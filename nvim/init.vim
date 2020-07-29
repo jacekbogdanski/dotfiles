@@ -42,6 +42,7 @@ Plug 'francoiscabrol/ranger.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'matze/vim-move'
+Plug 'Glench/Vim-Jinja2-Syntax'
 
 call plug#end()
 
