@@ -92,7 +92,7 @@ alias vi="nvim"
 alias open='xdg-open &>/dev/null'
 
 # Disable ctrl + s lock
-stty -ixon
+[[ -n ${TTY:-} && $+commands[stty] == 1 ]] && stty -ixon <$TTY >$TTY
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
