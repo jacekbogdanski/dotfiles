@@ -28,7 +28,6 @@ Plug 'w0rp/ale'
 Plug 'jszakmeister/vim-togglecursor'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-vinegar'
-Plug 'joshdick/onedark.vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'leafgarland/typescript-vim'
 Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
@@ -40,9 +39,9 @@ Plug 'tmhedberg/SimpylFold'
 Plug 'majutsushi/tagbar'
 Plug 'francoiscabrol/ranger.vim'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'ludovicchabant/vim-gutentags'
 Plug 'matze/vim-move'
 Plug 'Glench/Vim-Jinja2-Syntax'
+Plug 'arcticicestudio/nord-vim'
 
 call plug#end()
 
@@ -53,8 +52,7 @@ set shell=/bin/zsh
 
 set termguicolors
 
-let g:onedark_terminal_italics = 1
-colorscheme onedark
+colorscheme nord
 
 let &t_SI = "\<esc>[5 q" " I beam cursor for insert mode
 let &t_EI = "\<esc>[2 q" " block cursor for normal mode
