@@ -52,3 +52,15 @@ function! s:show_documentation()
     call CocAction('doHover')
   endif
 endfunction
+
+" Extensions list
+let g:coc_global_extensions = [
+      \'coc-markdownlint',
+      \'coc-python',
+      \'coc-json',
+      \'coc-git',
+      \'coc-tsserver',
+      \'coc-snippets',
+      \'coc-css',
+      \'coc-html'
+      \]
