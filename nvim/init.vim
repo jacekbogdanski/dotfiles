@@ -22,7 +22,6 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-rhubarb'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
-Plug 'tpope/vim-dispatch'
 Plug 'vim-airline/vim-airline'
 Plug 'w0rp/ale'
 Plug 'jszakmeister/vim-togglecursor'
@@ -42,6 +41,8 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'matze/vim-move'
 Plug 'Glench/Vim-Jinja2-Syntax'
 Plug 'arcticicestudio/nord-vim'
+Plug 'vim-test/vim-test'
+Plug 'benmills/vimux'
 
 call plug#end()
 
