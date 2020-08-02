@@ -74,8 +74,6 @@ source $ZSH/oh-my-zsh.sh
 
 ## User configuration
 
-# UI
-
 DEFAULT_USER=`whoami`
 
 export EDITOR="nvim"
@@ -85,6 +83,8 @@ PATH="$PATH:$(ruby -e 'print Gem.user_dir')/bin"
 PATH="$PATH:$HOME/.local/bin"
 
 TERM="xterm-256color"
+
+export BAT_THEME="Nord"
 
 # Aliases
 
