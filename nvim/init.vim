@@ -51,6 +51,7 @@ syntax enable
 
 set shell=/bin/zsh
 
+let g:nord_italic=1
 colorscheme nord
 
 set autowrite
