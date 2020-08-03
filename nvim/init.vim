@@ -43,6 +43,7 @@ Plug 'Glench/Vim-Jinja2-Syntax'
 Plug 'arcticicestudio/nord-vim'
 Plug 'vim-test/vim-test'
 Plug 'benmills/vimux'
+Plug 'vimwiki/vimwiki'
 
 call plug#end()
 
