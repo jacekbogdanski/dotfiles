@@ -131,3 +131,4 @@ nmap <silent> <C-s> :w<CR>
 
 nmap <Leader>s :%s//g<Left><Left>
 nmap <Leader>S :%S//g<Left><Left>
+nmap <Leader>r :%s/\<<C-r><C-w>\>//g<Left><Left>
