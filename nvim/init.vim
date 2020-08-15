@@ -1,3 +1,9 @@
+" NOTE: this file should be only used for plugins installation, general VIM
+" tweaks and common mappings. File type and plugin customizations should be
+" placed in corresponding directories according to VIM plugin layout.
+"
+" Learn more about plugin layout by reading https://learnvimscriptthehardway.stevelosh.com/chapters/42.html#plugin-layout-in-the-dark-ages
+"
 " ----------------------------------------------------------------------------------------
 "  PLUGINS INSTALLATION
 " ----------------------------------------------------------------------------------------
@@ -46,6 +52,10 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': 
 
 call plug#end()
 
+" ----------------------------------------------------------------------------------------
+"  GENERAL TWEAKS
+" ----------------------------------------------------------------------------------------
+
 filetype plugin indent on
 syntax enable
 
@@ -56,12 +66,11 @@ colorscheme nord
 
 set autowrite
 
-set swapfile " All swap files in tmp folder
+set swapfile
 set dir=~/.vim/tmp
 
 set backupdir=~/.vim/backup
 
-" set undo for persistent files
 set undofile
 set undodir=~/.vim/undodir
 set undolevels=1000
@@ -75,43 +84,42 @@ set smarttab
 set incsearch
 set nohls
 
-set showcmd             " Show (partial) command in status line.
-set showmatch           " Show matching brackets.
-set showmode            " Show current mode.
-set ruler               " Show the line and column numbers of the cursor.
-set number              " Show the line numbers on the left side.
+set showcmd
+set showmatch
+set showmode
+set ruler
+set number
 set numberwidth=5
-set formatoptions-=o    " Continue comment marker in new lines.
-set tabstop=4           " Render TABs using this many spaces.
-set shiftwidth=4        " Indentation amount for < and > commands.
+set formatoptions-=o
+set tabstop=4
+set shiftwidth=4
 
-set noerrorbells        " No beeps.
-set modeline            " Enable modeline.
-set linespace=0         " Set line-spacing to minimum.
-set nojoinspaces        " Prevents inserting two spaces after punctuation on a join (J)
+set noerrorbells
+set modeline
+set linespace=0
+set nojoinspaces
 
 set conceallevel=2
 
-" More natural splits
-set splitbelow          " Horizontal split below current.
-set splitright          " Vertical split to right of current.
+set splitbelow
+set splitright
 
 if !&scrolloff
-	set scrolloff=3       " Show next 3 lines while scrolling.
+	set scrolloff=3
 endif
 if !&sidescrolloff
-	set sidescrolloff=5   " Show next 5 columns while side-scrolling.
+	set sidescrolloff=5
 endif
-set nostartofline       " Do not jump to first character with page commands.
+
+set nostartofline
 
 set foldmethod=indent
 set foldlevel=99
 
-set ignorecase          " Make searching case insensitive
-set smartcase           " ... unless the query has capital letters.
+set ignorecase
+set smartcase
 
-set hidden              " Hide current buffer when switching between buffers
-
+set hidden
 set autoread
 
 set clipboard=unnamedplus
@@ -121,6 +129,10 @@ set diffopt+=vertical
 set cursorline
 
 set list lcs=tab:\¦\ 
+
+" ----------------------------------------------------------------------------------------
+"  GENERAL MAPPINGS
+" ----------------------------------------------------------------------------------------
 
 let mapleader = ','
 
@@ -133,3 +145,5 @@ nmap <silent> <C-s> :w<CR>
 nmap <Leader>s :%s//g<Left><Left>
 nmap <Leader>S :%S//g<Left><Left>
 nmap <Leader>r :%s/\<<C-r><C-w>\>//g<Left><Left>
+
+nmap <Leader>zz :setlocal spell!<CR>
