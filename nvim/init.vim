@@ -42,6 +42,7 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'vim-test/vim-test'
 Plug 'benmills/vimux'
 Plug 'vimwiki/vimwiki'
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
 call plug#end()
 
