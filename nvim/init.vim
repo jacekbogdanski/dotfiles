@@ -130,7 +130,7 @@ set cursorline
 
 set list lcs=tab:\¦\ 
 
-set spelllang=en_us,pl_pl
+set spelllang=en_us,pl
 
 " ----------------------------------------------------------------------------------------
 "  GENERAL MAPPINGS
