@@ -43,6 +43,7 @@ Plug 'vim-test/vim-test'
 Plug 'benmills/vimux'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'dhruvasagar/vim-table-mode'
+Plug 'godlygeek/tabular'
 
 call plug#end()
 
