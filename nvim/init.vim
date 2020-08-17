@@ -2,7 +2,8 @@
 " tweaks and common mappings. File type and plugin customizations should be
 " placed in corresponding directories according to VIM plugin layout.
 "
-" Learn more about plugin layout by reading https://learnvimscriptthehardway.stevelosh.com/chapters/42.html#plugin-layout-in-the-dark-ages
+" Learn more about plugin layout by reading
+" https://learnvimscriptthehardway.stevelosh.com/chapters/42.html#plugin-layout-in-the-dark-ages
 "
 " ----------------------------------------------------------------------------------------
 "  PLUGINS INSTALLATION
