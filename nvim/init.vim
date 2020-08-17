@@ -17,7 +17,6 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-peekaboo'
-Plug 'sheerun/vim-polyglot'
 Plug 'mattn/emmet-vim'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'tpope/vim-abolish'
@@ -30,24 +29,17 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'vim-airline/vim-airline'
 Plug 'w0rp/ale'
-Plug 'jszakmeister/vim-togglecursor'
-Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-vinegar'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'leafgarland/typescript-vim'
 Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
 Plug 'honza/vim-snippets'
-Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
-Plug 'cespare/vim-toml'
 Plug 'AndrewRadev/linediff.vim'
 Plug 'tmhedberg/SimpylFold'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'matze/vim-move'
 Plug 'Glench/Vim-Jinja2-Syntax'
 Plug 'arcticicestudio/nord-vim'
 Plug 'vim-test/vim-test'
 Plug 'benmills/vimux'
-Plug 'vimwiki/vimwiki'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
 call plug#end()
