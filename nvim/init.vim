@@ -17,7 +17,6 @@ Plug 'alvan/vim-closetag'
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'junegunn/vim-peekaboo'
 Plug 'mattn/emmet-vim'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'tpope/vim-abolish'
