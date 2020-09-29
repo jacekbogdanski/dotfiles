@@ -1,3 +1,6 @@
+let g:fzf_layout = {  'window': { 'yoffset': 1 ,'width': 1, 'height': 0.3 } }
+
+"
 " Override Colors command. You can safely do this in your .vimrc as fzf.vim
 " will not override existing commands.
 command! -bang Colors
