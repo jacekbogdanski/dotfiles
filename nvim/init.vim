@@ -31,7 +31,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'w0rp/ale'
 Plug 'tpope/vim-vinegar'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'neoclide/coc.nvim', {'tag': 'v0.0.78', 'do': './install.sh'}
+Plug 'neoclide/coc.nvim', {'tag': 'release', 'do': './install.sh'}
 Plug 'honza/vim-snippets'
 Plug 'AndrewRadev/linediff.vim'
 Plug 'tmhedberg/SimpylFold'
