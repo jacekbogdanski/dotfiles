@@ -9,6 +9,8 @@
 "  PLUGINS INSTALLATION
 " ----------------------------------------------------------------------------------------
 
+let g:python3_host_prog = '~/.pyenv/shims/python'
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'Yggdroot/indentLine'
