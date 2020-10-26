@@ -103,6 +103,7 @@ source $HOME/.extras
 export GOPATH="$HOME/go"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.cargo/bin:$PATH"
+export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
 
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
