@@ -76,36 +76,27 @@ source $ZSH/oh-my-zsh.sh
 
 ## User configuration
 
-DEFAULT_USER=`whoami`
+export DEFAULT_USER=`whoami`
 
 export EDITOR="nvim"
 export SSH_KEY_PATH="~/.ssh/rsa_id"
-
-PATH="$PATH:$(ruby -e 'print Gem.user_dir')/bin"
-PATH="$PATH:$HOME/.local/bin"
-
-TERM="xterm-256color"
-
 export BAT_THEME="Nord"
 
-# Aliases
+export NVM_DIR=~/.nvm
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
+export PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+
+export TERM="xterm-256color"
 
 alias vi="nvim"
-alias open='xdg-open &>/dev/null'
-
-# Disable ctrl + s lock
-[[ -n ${TTY:-} && $+commands[stty] == 1 ]] && stty -ixon <$TTY >$TTY
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 source $HOME/.extras
 
-export GOPATH="$HOME/go"
-
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.cargo/bin:$PATH"
-export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
-
-export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
