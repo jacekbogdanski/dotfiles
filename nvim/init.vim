@@ -45,7 +45,6 @@ Plug 'benmills/vimux'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'godlygeek/tabular'
-Plug 'Chiel92/vim-autoformat'
 
 call plug#end()
 
@@ -143,6 +142,5 @@ nmap <silent> <C-s> :w<CR>
 
 nmap <Leader>s :%s//g<Left><Left>
 nmap <Leader>S :%S//g<Left><Left>
-nmap <Leader>r :%s/\<<C-r><C-w>\>//g<Left><Left>
 
 nmap <Leader>zz :setlocal spell!<CR>
