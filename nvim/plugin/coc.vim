@@ -59,7 +59,7 @@ inoremap <nowait><expr> <C-b> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(
 " Remap keys for applying codeAction to the current buffer.
 nmap <leader>ac  <Plug>(coc-codeaction)
 " Apply AutoFix to problem on the current line.
-nmap <leader>qf  <Plug>(coc-fix-current)
+nmap <leader>.  <Plug>(coc-fix-current)
 
 " Completion pumvisible mapping. Move around using C-j, C-k.
 inoremap <expr> <C-j> pumvisible() ? "\<C-N>" : "\<C-j>"
