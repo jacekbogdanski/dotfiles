@@ -145,3 +145,6 @@ nmap <Leader>s :%s//g<Left><Left>
 nmap <Leader>S :%S//g<Left><Left>
 
 nmap <Leader>zz :setlocal spell!<CR>
+
+" Paste without feeding register.
+nmap <Leader>p "_dP
