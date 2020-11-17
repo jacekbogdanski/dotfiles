@@ -31,7 +31,6 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'vim-airline/vim-airline'
 Plug 'w0rp/ale'
-Plug 'tpope/vim-vinegar'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'neoclide/coc.nvim', {'tag': 'release', 'do': './install.sh'}
 Plug 'honza/vim-snippets'
@@ -45,6 +44,8 @@ Plug 'benmills/vimux'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'godlygeek/tabular'
+Plug 'preservim/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 call plug#end()
 
