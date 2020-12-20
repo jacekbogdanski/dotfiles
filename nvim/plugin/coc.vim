@@ -2,9 +2,6 @@
 set nobackup
 set nowritebackup
 
-" Give more space for displaying messages.
-set cmdheight=2
-
 " Smaller updatetime for CursorHold & CursorHoldI
 set updatetime=300
 

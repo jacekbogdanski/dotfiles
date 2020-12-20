@@ -80,7 +80,7 @@ export DEFAULT_USER=`whoami`
 
 export EDITOR="nvim"
 export SSH_KEY_PATH="~/.ssh/rsa_id"
-export BAT_THEME="Nord"
+export BAT_THEME="TwoDark"
 
 export NVM_DIR=~/.nvm
 

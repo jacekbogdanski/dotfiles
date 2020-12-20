@@ -38,7 +38,7 @@ Plug 'AndrewRadev/linediff.vim'
 Plug 'tmhedberg/SimpylFold'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'Glench/Vim-Jinja2-Syntax'
-Plug 'arcticicestudio/nord-vim'
+Plug 'joshdick/onedark.vim'
 Plug 'vim-test/vim-test'
 Plug 'benmills/vimux'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
@@ -58,8 +58,10 @@ syntax enable
 
 set shell=/bin/zsh
 
-let g:nord_italic=1
-colorscheme nord
+set termguicolors
+let g:onedark_terminal_italics=1
+let g:onedark_hide_endofbuffer=1
+colorscheme onedark
 
 set autowrite
 
