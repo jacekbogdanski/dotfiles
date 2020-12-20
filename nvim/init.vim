@@ -47,6 +47,7 @@ Plug 'dhruvasagar/vim-table-mode'
 Plug 'godlygeek/tabular'
 Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'takac/vim-hardtime'
 
 call plug#end()
 
