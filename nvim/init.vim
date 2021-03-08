@@ -47,6 +47,7 @@ Plug 'godlygeek/tabular'
 Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'cespare/vim-toml'
+Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
