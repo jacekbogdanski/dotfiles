@@ -1,5 +1,3 @@
-let g:fzf_layout = { 'window': { 'yoffset': 1 ,'width': 1, 'height': 0.3 } }
-
 " Customize fzf colors to match color scheme.
 let g:fzf_colors =
 \ { 'fg':      ['fg', 'Normal'],
