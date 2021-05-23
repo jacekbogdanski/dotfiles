@@ -1,0 +1,11 @@
+local utils = require("utils")
+
+utils.nmap("<Leader>ga", ":Git add %<CR><CR>")
+utils.nmap("<Leader>gg", ":Gstatus<CR>")
+utils.nmap("<Leader>gc", ":Gcommit -v -q<CR>")
+utils.nmap("<Leader>gq", ":Gcommit -v -q %<CR>")
+utils.nmap("<Leader>gd", ":Gdiff<CR>")
+utils.nmap("<Leader>ge", ":Gedit<CR>")
+utils.nmap("<Leader>gr", ":Gread<CR>")
+utils.nmap("<Leader>gw", ":Gwrite<CR>")
+utils.nmap("<Leader>gm", ":Gmove<CR>")
