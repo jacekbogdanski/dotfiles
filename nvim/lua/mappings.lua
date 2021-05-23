@@ -1,6 +1,5 @@
 local utils = require("utils")
 
--- General
 vim.g.mapleader = ','
 
 utils.nmap(";", ":")

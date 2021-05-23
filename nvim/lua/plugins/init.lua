@@ -19,6 +19,7 @@ return require("packer").startup(function()
 	-- LSP, code completion
 	use "neovim/nvim-lspconfig"
 	use "hrsh7th/nvim-compe"
+	use "hrsh7th/vim-vsnip"
 
     -- Treesitter
     use {"nvim-treesitter/nvim-treesitter", run = ":TSUpdate"}
