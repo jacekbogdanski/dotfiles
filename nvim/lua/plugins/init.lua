@@ -57,6 +57,7 @@ return require("packer").startup(function()
 	use "romgrk/barbar.nvim"
 	use "kyazdani42/nvim-web-devicons"
 	use "christianchiarulli/nvcode-color-schemes.vim"
+	use "norcalli/nvim-colorizer.lua"
 
 	-- Editing
 	use "windwp/nvim-autopairs"	
