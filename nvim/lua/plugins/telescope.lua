@@ -3,6 +3,7 @@ local actions = require("telescope.actions")
 
 require("telescope").setup {
 	defaults = {
+		selection_caret = " ",
 		mappings = {
 			i = {
 				["<C-j>"] = actions.move_selection_next,
