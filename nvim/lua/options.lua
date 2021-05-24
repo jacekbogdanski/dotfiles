@@ -3,6 +3,7 @@ local utils = require("utils")
 -- Global options
 vim.cmd("syntax on")
 
+
 -- Editor options 
 vim.cmd("set iskeyword+=-")
 vim.cmd("set shortmess+=c")
@@ -32,7 +33,8 @@ utils.set_options(vim.o, {
 	foldlevel = 99,
 	ignorecase = true,
 	smartcase = true,
-	completeopt = "menuone,noselect"
+	completeopt = "menuone,noselect",
+	hidden = true
 })
 
 -- Window options
