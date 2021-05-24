@@ -18,5 +18,9 @@ require("telescope").setup {
 	}
 }
 
-utils.nnoremap("<C-p>", ':lua require("telescope.builtin").find_files()<cr>')
-utils.nnoremap("<C-g>", ':lua require("telescope.builtin").live_grep()<cr>')
+utils.nnoremap("<C-p>", ':lua require("telescope.builtin").find_files()<CR>')
+utils.nnoremap("<C-g>", ':lua require("telescope.builtin").live_grep()<CR>')
+
+utils.nmap("<Leader>gb", ':lua require("telescope.builtin").git_branches()<CR>')
+utils.nmap("<Leader>gl", ':lua require("telescope.builtin").git_commits()<CR>')
+utils.nmap("<Leader>gf", ':lua require("telescope.builtin").git_bcommits()<CR>')
