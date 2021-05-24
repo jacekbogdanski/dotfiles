@@ -6,7 +6,7 @@ vim.cmd("syntax on")
 -- Editor options 
 vim.cmd("set iskeyword+=-")
 vim.cmd("set shortmess+=c")
-vim.cmd("set inccommand=split")
+vim.cmd("set inccommand=nosplit")
 vim.cmd("set whichwrap+=<,>,[,],h,l")
 vim.cmd("set diffopt+=vertical")
 
