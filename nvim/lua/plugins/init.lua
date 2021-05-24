@@ -53,6 +53,7 @@ return require("packer").startup(function()
 	use "tpope/vim-repeat"
 
 	-- Looks
+	use "mhinz/vim-startify"
 	use "glepnir/galaxyline.nvim"
 	use "romgrk/barbar.nvim"
 	use "kyazdani42/nvim-web-devicons"
