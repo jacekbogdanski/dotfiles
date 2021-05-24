@@ -17,4 +17,3 @@ require("plugins/vsnip")
 
 require("lsp")
 require("lsp/tsserver")
-

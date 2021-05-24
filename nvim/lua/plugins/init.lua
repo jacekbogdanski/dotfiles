@@ -5,8 +5,8 @@ local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
 
 -- Ensure packer installation
 if fn.empty(fn.glob(install_path)) > 0 then
-    execute("!git clone https://github.com/wbthomason/packer.nvim " .. install_path)
-    execute "packadd packer.nvim"
+	execute("!git clone https://github.com/wbthomason/packer.nvim " .. install_path)
+	execute "packadd packer.nvim"
 end
 
 -- Auto compile when there are changes in plugins.lua
@@ -21,9 +21,9 @@ return require("packer").startup(function()
 	use "hrsh7th/nvim-compe"
 	use "hrsh7th/vim-vsnip"
 
-    -- Treesitter
-    use {"nvim-treesitter/nvim-treesitter", run = ":TSUpdate"}
-    use "windwp/nvim-ts-autotag"
+	-- Treesitter
+	use {"nvim-treesitter/nvim-treesitter", run = ":TSUpdate"}
+	use "windwp/nvim-ts-autotag"
 
 	-- Telescope
 	use {"nvim-telescope/telescope.nvim",
@@ -35,7 +35,7 @@ return require("packer").startup(function()
 	-- Git
 	use "tpope/vim-fugitive"
 	use "tpope/vim-rhubarb" -- :Gbrowse
-    use {"lewis6991/gitsigns.nvim", requires = {"nvim-lua/plenary.nvim"}}
+	use {"lewis6991/gitsigns.nvim", requires = {"nvim-lua/plenary.nvim"}}
 
 	-- Tmux
 	use "christoomey/vim-tmux-navigator"

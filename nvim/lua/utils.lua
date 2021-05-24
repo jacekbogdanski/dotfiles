@@ -4,27 +4,27 @@ local M = {}
 
 -- Key mappings
 function M.map(type, input, output)
-    api.nvim_set_keymap(type, input, output, {})
+	api.nvim_set_keymap(type, input, output, {})
 end
 
 function M.noremap(type, input, output)
-    api.nvim_set_keymap(type, input, output, {noremap = true, silent = true })
+	api.nvim_set_keymap(type, input, output, {noremap = true, silent = true })
 end
 
 function M.nnoremap(input, output)
-    M.noremap('n', input, output)
+	M.noremap('n', input, output)
 end
 
 function M.inoremap(input, output)
-    M.noremap('i', input, output)
+	M.noremap('i', input, output)
 end
 
 function M.vnoremap(input, output)
-    M.noremap('v', input, output)
+	M.noremap('v', input, output)
 end
 
 function M.tnoremap(input, output)
-    M.noremap('t', input, output)
+	M.noremap('t', input, output)
 end
 
 function M.nmap(input, output)
