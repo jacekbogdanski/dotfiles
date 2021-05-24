@@ -15,6 +15,7 @@ require("plugins/tmuxnavigator")
 require("plugins/treesitter")
 require("plugins/colorizer")
 require("plugins/indentblankline")
+require("plugins/relativenum")
 
 require("lsp")
 require("lsp/tsserver")
