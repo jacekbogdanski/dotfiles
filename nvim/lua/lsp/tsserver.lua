@@ -1,6 +1,9 @@
 local nvim_lsp = require("lspconfig")
 
-nvim_lsp.tsserver.setup {}
+nvim_lsp.tsserver.setup {
+	root_dir = require('lspconfig/util')
+		.root_pattern("package.json", "tsconfig.json", "jsconfig.json", ".git"),
+}
 
 nvim_lsp.diagnosticls.setup {
 	filetypes = {"javascript", "javascriptreact", "typescript", "typescriptreact", "css"},

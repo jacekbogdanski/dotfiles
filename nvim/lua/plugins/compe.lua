@@ -15,13 +15,15 @@ require("compe").setup {
   documentation = true,
 
   source = {
-    path = true,
-    buffer = true,
-    calc = true,
-    nvim_lsp = true,
-    nvim_lua = true,
-    vsnip = true,
-    ultisnips = true,
+	  path = {kind = "   (Path)"},
+	  buffer = {kind = "   (Buffer)"},
+	  calc = {kind = "   (Calc)"},
+	  vsnip = {kind = "   (Snippet)"},
+	  nvim_lsp = {kind = "   (LSP)"},
+	  spell = {kind = "   (Spell)"},
+	  tags = false,
+	  vim_dadbod_completion = true,
+	  emoji = {kind = " ﲃ  (Emoji)", filetypes={"markdown", "text"}}
   }
 }
 
@@ -52,6 +54,7 @@ function tab_complete()
     return vim.fn['compe#complete']()
   end
 end
+
 function s_tab_complete()
   if vim.fn.pumvisible() == 1 then
     return t "<C-p>"
@@ -66,3 +69,4 @@ vim.api.nvim_set_keymap("i", "<Tab>", "v:lua.tab_complete()", {expr = true})
 vim.api.nvim_set_keymap("s", "<Tab>", "v:lua.tab_complete()", {expr = true})
 vim.api.nvim_set_keymap("i", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
 vim.api.nvim_set_keymap("s", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
+vim.api.nvim_set_keymap("i", "<CR>", "compe#confirm('<CR>')", {expr = true})

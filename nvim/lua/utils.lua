@@ -8,7 +8,7 @@ function M.map(type, input, output)
 end
 
 function M.noremap(type, input, output)
-    api.nvim_set_keymap(type, input, output, { noremap = true, silent = true })
+    api.nvim_set_keymap(type, input, output, {noremap = true, silent = true })
 end
 
 function M.nnoremap(input, output)

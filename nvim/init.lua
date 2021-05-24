@@ -13,6 +13,7 @@ require("plugins/nvimtree")
 require("plugins/telescope")
 require("plugins/tmuxnavigator")
 require("plugins/treesitter")
+require("plugins/vsnip")
 
 require("lsp")
 require("lsp/tsserver")
