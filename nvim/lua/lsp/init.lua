@@ -11,7 +11,7 @@ utils.nnoremap("<Leader>wr", "<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>
 utils.nnoremap("<Leader>wl", "<cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<CR>")
 utils.nnoremap("<Leader>D", "<cmd>lua vim.lsp.buf.type_definition()<CR>")
 utils.nnoremap("<Leader>rn", "<cmd>lua vim.lsp.buf.rename()<CR>")
-utils.nnoremap("<Leader>ca", "<cmd>lua vim.lsp.buf.code_action()<CR>")
+utils.nnoremap("<Leader><Leader>", "<cmd>lua vim.lsp.buf.code_action()<CR>")
 utils.nnoremap("<Leader>e", "<cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>")
 utils.nnoremap("[d", "<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>")
 utils.nnoremap("]d", "<cmd>lua vim.lsp.diagnostic.goto_next()<CR>")
