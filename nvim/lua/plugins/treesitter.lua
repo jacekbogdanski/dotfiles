@@ -4,6 +4,8 @@ require("nvim-treesitter.configs").setup {
 		enable = true
 	},
 	highlight = {
-		enable = true
-	}
+		enable = true,
+		additional_vim_regex_highlighting = true
+	},
+	incremental_selection = {enable = true}
 }
