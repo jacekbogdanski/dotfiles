@@ -1,3 +1,5 @@
+local utils = require("utils")
+
 require("nvim-treesitter.configs").setup {
 	ensure_installed = "maintained",
 	autotag = {
@@ -9,3 +11,8 @@ require("nvim-treesitter.configs").setup {
 	},
 	incremental_selection = {enable = true}
 }
+
+utils.set_options(vim.wo, {
+	foldmethod = "expr",
+	foldexpr = "nvim_treesitter#foldexpr()"
+})

@@ -29,8 +29,6 @@ utils.set_options(vim.o, {
 	smarttab = true,
 	hls = false,
 	errorbells = false,
-	foldmethod = "indent",
-	foldlevel = 99,
 	ignorecase = true,
 	smartcase = true,
 	completeopt = "menuone,noselect",
