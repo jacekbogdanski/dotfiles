@@ -58,6 +58,7 @@ return require("packer").startup(function()
 	use "kyazdani42/nvim-web-devicons"
 	use "christianchiarulli/nvcode-color-schemes.vim"
 	use "norcalli/nvim-colorizer.lua"
+	use {"lukas-reineke/indent-blankline.nvim", branch = "lua"}
 
 	-- Editing
 	use "windwp/nvim-autopairs"	

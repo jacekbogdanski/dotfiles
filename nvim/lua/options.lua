@@ -39,6 +39,7 @@ utils.set_options(vim.o, {
 utils.set_options(vim.wo, {
 	number = true,
 	cursorline = true,
+	colorcolumn = "99999", -- Fix indent column https://github.com/neovim/neovim/issues/14209
 	signcolumn = "yes"
 })
 

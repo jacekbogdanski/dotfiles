@@ -1,3 +1,5 @@
+-- npm install -g typescript typescript-language-server diagnostic-languageserver
+
 local nvim_lsp = require("lspconfig")
 
 nvim_lsp.tsserver.setup {
