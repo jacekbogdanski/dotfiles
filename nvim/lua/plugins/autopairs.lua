@@ -5,7 +5,3 @@ require("nvim-autopairs").setup({
 		javascript = {"template_string"}
 	}
 })
-
-require("nvim-treesitter.configs").setup {
-	autopairs = {enable = true}
-}
