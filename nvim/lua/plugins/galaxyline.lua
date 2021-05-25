@@ -1,22 +1,14 @@
 local gl = require("galaxyline")
 local colors = {
-	bg = "#282C34",
-	yellow = "#DCDCAA",
-	dark_yellow = "#D7BA7D",
-	cyan = "#4EC9B0",
-	green = "#608B4E",
-	light_green = "#B5CEA8",
-	string_orange = "#CE9178",
-	orange = "#FF8800",
-	purple = "#C586C0",
-	magenta = "#D16D9E",
+	bg = "#1b2b34",
+	yellow = "#fac863",
+	cyan = "#62b3b2",
+	green = "#99c794",
+	orange = "#f99157",
+	purple = "#c594c5",
 	grey = "#858585",
-	blue = "#569CD6",
-	vivid_blue = "#4FC1FF",
-	light_blue = "#9CDCFE",
-	red = "#D16969",
-	error_red = "#F44747",
-	info_yellow = "#FFCC66"
+	blue = "#6699cc",
+	red = "#ec5f67",
 }
 local condition = require("galaxyline.condition")
 local gls = gl.section
@@ -32,7 +24,7 @@ gls.left[1] = {
 				v = colors.purple,
 				[""] = colors.purple,
 				V = colors.purple,
-				c = colors.magenta,
+				c = colors.red,
 				no = colors.blue,
 				s = colors.orange,
 				S = colors.orange,
@@ -105,15 +97,15 @@ gls.left[6] = {
 }
 
 gls.right[1] = {
-	DiagnosticError = {provider = "DiagnosticError", icon = "  ", highlight = {colors.error_red, colors.bg}}
+	DiagnosticError = {provider = "DiagnosticError", icon = "  ", highlight = {colors.red, colors.bg}}
 }
-gls.right[2] = {DiagnosticWarn = {provider = "DiagnosticWarn", icon = "  ", highlight = {colors.orange, colors.bg}}}
+gls.right[2] = {DiagnosticWarn = {provider = "DiagnosticWarn", icon = "  ", highlight = {colors.yellow, colors.bg}}}
 
 gls.right[3] = {
-	DiagnosticHint = {provider = "DiagnosticHint", icon = "  ", highlight = {colors.vivid_blue, colors.bg}}
+	DiagnosticHint = {provider = "DiagnosticHint", icon = "  ", highlight = {colors.cyan, colors.bg}}
 }
 
-gls.right[4] = {DiagnosticInfo = {provider = "DiagnosticInfo", icon = "  ", highlight = {colors.info_yellow, colors.bg}}}
+gls.right[4] = {DiagnosticInfo = {provider = "DiagnosticInfo", icon = "  ", highlight = {colors.blue, colors.bg}}}
 
 gls.right[5] = {
 	ShowLspClient = {
