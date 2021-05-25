@@ -10,3 +10,5 @@ utils.nmap("<Leader>ge", ":Gedit<CR>", opts)
 utils.nmap("<Leader>gr", ":Gread<CR>", opts)
 utils.nmap("<Leader>gw", ":Gwrite<CR>", opts)
 utils.nmap("<Leader>gm", ":Gmove<CR>", opts)
+
+vim.g.fugitive_pty = 0
