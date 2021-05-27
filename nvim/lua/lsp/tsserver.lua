@@ -3,7 +3,7 @@
 local nvim_lsp = require("lspconfig")
 
 nvim_lsp.tsserver.setup {
-	root_dir = require('lspconfig/util').root_pattern("package.json", "tsconfig.json", "jsconfig.json", ".git"),
+	on_attach = require("lsp").common_on_attach
 }
 
 nvim_lsp.diagnosticls.setup {

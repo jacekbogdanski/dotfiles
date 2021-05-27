@@ -73,3 +73,16 @@ vim.lsp.protocol.CompletionItemKind = {
     "   (Operator)",
     "   (TypeParameter)"
 }
+
+local M = {}
+
+function M.common_on_attach(client)
+	require("illuminate").on_attach(client)
+
+	-- Highlight groups for illuminate
+	vim.api.nvim_command [[ hi def link LspReferenceText CursorLine ]]
+	vim.api.nvim_command [[ hi def link LspReferenceWrite CursorLine ]]
+	vim.api.nvim_command [[ hi def link LspReferenceRead CursorLine ]]
+end
+
+return M
