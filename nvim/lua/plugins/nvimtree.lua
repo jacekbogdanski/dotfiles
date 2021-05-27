@@ -7,6 +7,8 @@ utils.set_options(vim.g, {
 	nvim_tree_hide_dotfiles = 1,
 	nvim_tree_indent_markers = 1,
 	nvim_tree_follow = 1,
+	nvim_tree_hijack_netrw = 1,
+	nvim_tree_disable_netrw = 0
 })
 
 utils.nnoremap("<C-n>", ":NvimTreeToggle<CR>")
