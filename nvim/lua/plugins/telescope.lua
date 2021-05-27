@@ -20,6 +20,7 @@ require("telescope").setup {
 
 utils.nnoremap("<C-p>", ':lua require("telescope.builtin").find_files()<CR>')
 utils.nnoremap("<C-g>", ':lua require("telescope.builtin").live_grep()<CR>')
+utils.nnoremap("<C-t>", ':lua require("telescope.builtin").tags()<CR>')
 utils.nnoremap("<Leader><Leader>", ':lua require("telescope.builtin").buffers()<CR>')
 
 utils.nmap("<Leader>gb", ':lua require("telescope.builtin").git_branches()<CR>')
