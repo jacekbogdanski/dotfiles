@@ -60,7 +60,7 @@ return require("packer").startup(function()
 	use "kyazdani42/nvim-web-devicons"
 	use "jacekbogdanski/oceanic-next"
 	use "norcalli/nvim-colorizer.lua"
-	use {"lukas-reineke/indent-blankline.nvim", branch = "lua"}
+	use "lukas-reineke/indent-blankline.nvim"
 
 	-- Editing
 	use "windwp/nvim-autopairs"	
