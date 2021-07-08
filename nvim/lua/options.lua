@@ -15,7 +15,6 @@ utils.set_options(vim.o, {
 	undofile = true,
 	autowrite = true,
 	termguicolors = true,
-	t_Co = "256",
 	pumheight = 10,
 	mouse = "a",
 	splitbelow = true,
