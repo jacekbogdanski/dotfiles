@@ -3,7 +3,7 @@ local utils = require("utils")
 require( "nvim-tree").setup {
 	auto_close = true,
 	hijack_netrw = true,
-	disable_nerw = true,
+	disable_netrw = false,
 	git = {
 		enable = true,
 		ignore = true
