@@ -91,6 +91,10 @@ export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
 export PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 
+export PATH="$PATH:/usr/local/go/bin"
+export GOPATH="$HOME/go"
+export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
+
 export TERM="xterm-256color"
 
 alias vi="nvim"

@@ -1,15 +1,20 @@
 local utils = require("utils")
 
-utils.set_options(vim.g, {
-	nvim_tree_lsp_diagnostics = 1,
-	nvim_tree_gitignore = 1,
-	nvim_tree_auto_close = 1,
-	nvim_tree_hide_dotfiles = 1,
-	nvim_tree_indent_markers = 1,
-	nvim_tree_follow = 1,
-	nvim_tree_hijack_netrw = 1,
-	nvim_tree_disable_netrw = 0
-})
+require( "nvim-tree").setup {
+	auto_close = true,
+	hijack_netrw = true,
+	disable_nerw = true,
+	git = {
+		enable = true,
+		ignore = true
+	},
+	diagnostics = {
+		enable = true
+	},
+	filters = {
+		dotfiles = true
+	}
+}
 
 utils.nnoremap("<C-n>", ":NvimTreeToggle<CR>")
 utils.nnoremap("<Leader>n", ":NvimTreeFindFile<CR>")
